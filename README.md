@@ -2,11 +2,11 @@
 
 ## Nmap script used to discover potentially vulnerabilities of discovered services in detected open ports.
 
-This tools uses the NSE Engine from Nmap to execute itself. In a Linux distribution, the NSE scripts are located in the following directory:
+This tools uses the NSE Engine from Nmap to execute itself. In a Linux distribution, the NSE scripts are located in one of the following directories:
 
          /usr/local/share/nmap/scripts/      or      /usr/share/nmap/scripts 
          
-Meanwhile in Windows systems this folders usually corresponds to:     
+Meanwhile, in Windows systems, this folders usually corresponds to:     
          
          c:\Program Files\Nmap\Scripts       or       <HOME>\AppData\Roaming\nmap
          
