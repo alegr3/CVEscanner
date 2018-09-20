@@ -22,7 +22,7 @@ If you have not downloaded this file, the first time you will use this tool you 
  
           nmap -sV localhost --script=cvescanner.nse --script-args='merge-database=1' -sn
 
-4) Launch a search of vulnerabilities: 
+4) Launch the script to search for vulnerabilities of a given host: 
  
           nmap -sV <target_ip> --script=cvescanner.nse
 
