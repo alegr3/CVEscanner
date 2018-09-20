@@ -1,14 +1,14 @@
 # CVEscanner
 
-Nmap script used to discover potentially vulnerabilities of discovered services in detected open ports.
+## Nmap script used to discover potentially vulnerabilities of discovered services in detected open ports.
 
 This tools uses the NSE Engine from Nmap to execute itself. In a Linux distribution, the NSE scripts are located in the following directory:
 
          /usr/local/share/nmap/scripts/
          
- First of all, copy the file cvescanner.nse to the previous location.
+ First of all, copy the file **cvescanner.nse** to the previous location.
 
-To launch this script is necessary to locate the "databases" folder in the folder you are launching the Nmap command. This folder contains the databases used for the NSE script. The file database.csv have to exist inside this folder to a proper execution.
+To launch this script is necessary to locate the "databases" folder in the folder you are launching the Nmap command. This folder contains the databases used for the NSE script. The file **database.csv** have to exist inside this folder to a proper execution.
 
 If you have not downloaded this file, the first time you will use this tool you will have to follow this steps:
 
