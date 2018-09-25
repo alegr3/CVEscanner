@@ -18,13 +18,13 @@ If you have not downloaded this file, the first time you will use this tool you 
 
 1) Create one or more databases of a selected year by using the command: 
  
-          nmap -sV localhost --script=cvescanner.nse --script-args='database=1999' -sn
+          nmap -sV <target_ip> --script=cvescanner.nse --script-args='database=1999' -sn
 
 2) This will generate a file, i.e. database1999.csv, with the vulnerabilities of the given year. You can create databases of each year from 1999 to the current year.
 
 3) Merge the previous databases to a single file, database.csv, which will be the database used by the script. To do so, you just have to use the command: 
  
-          nmap -sV localhost --script=cvescanner.nse --script-args='merge-database=1' -sn
+          nmap -sV <target_ip> --script=cvescanner.nse --script-args='merge-database=1' -sn
 
 4) Launch the script to search for vulnerabilities of a given host: 
  
