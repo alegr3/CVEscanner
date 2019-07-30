@@ -549,7 +549,7 @@ end
 
 action = function(host, port)
 
-	local last_year = 2018
+	local last_year = 2019
 	local log = assert(io.open("./cvescanner.log", "a"))
 
 	-- This function is launched before the scan for the database manipulation
