@@ -549,7 +549,7 @@ end
 
 action = function(host, port)
 
-	local last_year = 2019
+	local last_year = tonumber(os.date("%Y"))
 	local log = assert(io.open("./cvescanner.log", "a"))
 
 	-- This function is launched before the scan for the database manipulation
@@ -575,7 +575,7 @@ action = function(host, port)
 					log:close()
 					stdnse.print_debug(1, "Database sucessfully created.")
 				else
-					print(string.format("One of the year(s) is not in the allowed range [1999-%s]"), last_year)
+					print(string.format("One of the year(s) is not in the allowed range [1999-%s]", last_year))
 					log:write(string.format("[%s] INFO: One of the year(s) is not in the allowed range [1999-%s].\n", os.date("%Y-%m-%d %H:%M:%S"), last_year))
 					log:close()
 				end
